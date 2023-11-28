@@ -1,0 +1,251 @@
+.allBox {
+    background: rgb(4, 22, 57);
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(96, 96, 11); */
+    height: 80vh;
+    width: 50%;
+    padding: 5.5rem 0;
+    /* margin: 0rem 0rem 0 0rem; */
+}
+
+.logoContent {
+    position: relative;
+    /* background: green; */
+    width: 50%;
+    height: 80vh;
+}
+
+.content {
+    position: relative;
+    width: 390px;
+    height: 390px;
+    /* background: rgb(0, 0, 0); */
+    border-radius: 50%;
+    border: 1px solid #1aadde;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 2px #08d6fb;
+    inset: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    inset: -40px 40px;
+    background: linear-gradient(315deg,#fbff00,#5c33ff);
+    box-shadow: 0px 0px 20px 20px #ff0404;
+    transition: 0.5s;
+    animation: animation 4s linear infinite;
+}
+
+.content:hover::before {
+    inset: -20px 0px;
+}
+
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    background: #162052;
+    border-radius: 50%;
+}
+
+.react {
+    position: absolute;
+    width: 98%;
+    border: 1px solid white;
+    border-radius: 50%;
+    filter: blur(3px);
+    background: #080c27;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .react {
+      animation: App-logo-spin infinite 10s linear;
+    }
+  }
+
+  /* animated from here */
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.bardan {
+    position: absolute;
+    width: 98%;
+    border-radius: 47%;
+}
+
+
+
+/* css code for texts */
+
+.heading-3 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    /* background: #000; */
+}
+
+
+.name {
+    color: orangered;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .text {
+    color: orangered;
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+.typical {
+    text-align: center;
+    /* background: #000; */
+    height: 4rem;
+    margin-top: 10px;
+    padding: 5px 0px;
+
+}
+
+.primary-text-3 {
+    /* background: #777777; */
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: large;
+
+}
+
+.btns {
+    /* text-align: center; */
+    /* margin: 2rem; */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* end texts css */
+
+
+@media screen and (max-width: 1000px) {
+  
+   
+    .content {
+        top: 2rem;
+        position: relative;
+        width: 280px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+}
+
+/* @media screen and (max-width: 800px) {
+    .allBox {
+        background: blue;
+    }
+
+    .content {
+        position: relative;
+        margin: auto;
+        width: 250px;
+        height: 250px;
+    }
+} */
+
+@media screen and (max-width: 700px) {
+    .allBox {
+      /* background: #391f1f; */
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .textContent {
+        background: orange;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    /* .logoContent {
+        padding-top: 5rem;
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        background: red;
+    } */
+
+    .logoContent {
+        width: 100%;
+        height: 60vh;
+        /* margin: 0 10rem 5rem 0; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+    .content {
+        top: 2rem;
+        left: 10px;
+        position: relative;
+        width: 280px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .logoContent {
+        width: 100%;
+        height: 60vh;
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content {
+        /* top: 1px; */
+        margin: 0 1rem 0 0rem ;
+        width: 210px;
+        height: 210px;
+    }
+}

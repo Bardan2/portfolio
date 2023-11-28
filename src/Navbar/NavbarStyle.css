@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    margin-top: 0rem;
+    position: fixed;
+    z-index: 4;
+}
+
+.p-logo {
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid rgb(255, 98, 0);
+    border-radius: 45%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.navbar.active {
+    background: rgba(0, 0, 0, 0.445);
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+}
+
+.nav-menu li a {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    .hamburger {
+        display: initial;
+        justify-content: end;
+        text-align: end;
+        z-index: 4;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 4rem;
+        top: 6rem;
+        right: -100%;
+        position: absolute;
+        z-index: 4;
+        background: rgb(0, 0, 0);
+        transition: 0.5s;
+        border-radius: 15rem 0rem 15rem 0rem;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        box-shadow: 0px 0px 20px 40px rgba(0, 0, 0, 0.231);
+        transform: rotate(0deg);
+        animation: spin 0.5s linear normal;
+    }
+
+    @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(180deg);
+        }
+      }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 1.9rem 0;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-menu {
+        background: rgb(0, 0, 0);
+        padding: 2rem 0;
+        top: 5rem;
+        border-radius: 8rem 0rem 8rem 0rem;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 0.8rem 0;
+        width: 100%;
+    
+    }
+
+    .nav-menu li a {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
