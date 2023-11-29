@@ -18,7 +18,7 @@
     margin: 2rem auto;
     background: rgb(14, 3, 37);
     border-radius: 0px 8rem 0 5rem;
-    padding: 40px;
+    padding: 60px 40px 60px 40px;
 }
 
 .img-content {
@@ -42,7 +42,7 @@
 }
 
 .text-content {
-    width: 50%;
+    width: 55%;
     margin: auto 0;
     text-align: center;
     font-weight: 200;
