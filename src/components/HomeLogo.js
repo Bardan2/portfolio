@@ -36,7 +36,7 @@ const HomeLogo = () => {
             Hire Me
           </Link>
           <a
-            href="/Bardan-Resume.pdf"
+            href="/Bardan-CV Resume.pdf"
             download="Bardan-CV Resume.pdf"
             className="btn btn-light"
           >

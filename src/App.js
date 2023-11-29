@@ -1,11 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Skills from "./routes/Skills";
-import Service from "./routes/Service";
-import Projects from "./routes/Projects";
-import Contact from "./routes/Contact";
+import Home from "./router/Home";
+import Skills from "./router/Skills";
+import Projects from "./router/Projects";
+import ContactList from "./router/ContactList";
+import Myself from "./router/Myself";
 
 function App() {
   return (
@@ -13,11 +12,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/service" element={<Service />} />
+          <Route path="/myself" element={<Myself />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<ContactList />} />
         </Routes>
       </BrowserRouter>
     </div>

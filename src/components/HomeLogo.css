@@ -1,7 +1,6 @@
 .allBox {
-    background: rgb(4, 22, 57);
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -11,25 +10,24 @@
 .textContent {
     display: flex;
     flex-direction: column;
-    /* background: rgb(96, 96, 11); */
-    height: 80vh;
     width: 50%;
     padding: 5.5rem 0;
-    /* margin: 0rem 0rem 0 0rem; */
+    /* background: #000; */
 }
 
 .logoContent {
     position: relative;
+    width: 45%;
+    padding-top: 2rem;
+    /* height: 90vh; */
     /* background: green; */
-    width: 50%;
-    height: 80vh;
 }
 
 .content {
+    margin-top: -10rem;
     position: relative;
-    width: 390px;
-    height: 390px;
-    /* background: rgb(0, 0, 0); */
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     border: 1px solid #1aadde;
     overflow: hidden;
@@ -85,7 +83,6 @@
     }
   }
 
-  /* animated from here */
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);
@@ -109,7 +106,6 @@
     text-align: center;
     margin: 1rem;
     font-size: 1.5rem;
-    /* background: #000; */
 }
 
 
@@ -127,7 +123,6 @@
 
 .typical {
     text-align: center;
-    /* background: #000; */
     height: 4rem;
     margin-top: 10px;
     padding: 5px 0px;
@@ -135,7 +130,6 @@
 }
 
 .primary-text-3 {
-    /* background: #777777; */
     text-align: center;
     color: white;
     padding: 1rem;
@@ -167,31 +161,15 @@
 
 }
 
-/* @media screen and (max-width: 800px) {
-    .allBox {
-        background: blue;
-    }
-
-    .content {
-        position: relative;
-        margin: auto;
-        width: 250px;
-        height: 250px;
-    }
-} */
-
 @media screen and (max-width: 700px) {
     .allBox {
-      /* background: #391f1f; */
       display: flex;
       flex-direction: column-reverse;
       width: 100%;
-      height: 100vh;
     }
-
+    
     .textContent {
         width: 100%;
-        height: 50vh;
         display: flex;
         flex-direction: column;
         padding-top: 10px;
@@ -216,10 +194,11 @@
         justify-content: center;
         align-items: center;
     }
-
-
+    
+    
     
     .content {
+        margin-top: 5rem;
         top: 2rem;
         left: 10px;
         position: relative;

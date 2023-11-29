@@ -1,0 +1,38 @@
+.info {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+
+.first div {
+    padding: 0.8rem;
+}
+
+.home {
+    display: flex;
+}
+
+.second div {
+    padding: 0.8rem;
+}
+
+@media screen and (max-width: 640px) {
+
+    .info {
+        padding: 0px;
+        }
+
+    .first div {
+        padding: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .info {
+        width: auto;
+        padding: 20px;
+    }
+}
