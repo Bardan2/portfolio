@@ -1,7 +1,7 @@
 import React from "react";
-import SelfMe from "../components/SelfMe";
-import Footer from "../components/Footer";
-import Navbar from "../Navbar/Navbar";
+import SelfMe from "../pages/SelfMe";
+import Footer from "../pages/Footer";
+import Navbar from "../components/Navbar";
 
 const Myself = () => {
   return (

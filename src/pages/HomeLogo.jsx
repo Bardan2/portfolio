@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeLogo.css";
+import "../styles/HomeLogo.css";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
 

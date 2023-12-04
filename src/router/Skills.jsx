@@ -1,7 +1,7 @@
 import React from "react";
-import MySkills from "../components/MySkills";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../components/Footer";
+import MySkills from "../pages/MySkills";
+import Navbar from "../components/Navbar";
+import Footer from "../pages/Footer";
 
 const Skills = () => {
   return (

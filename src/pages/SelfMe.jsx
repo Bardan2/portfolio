@@ -1,5 +1,5 @@
 import React from "react";
-import "./SelfMe.css";
+import "../styles/SelfMe.css";
 
 const SelfMe = () => {
   return (
